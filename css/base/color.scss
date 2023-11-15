@@ -1,0 +1,10 @@
+// Create a variable for each color in the color palette
+@each $color, $value in $colors {
+    :root {
+        --#{$color}: #{$value};
+    }
+
+    .color-#{$color} {
+        color: $value;
+    }
+}

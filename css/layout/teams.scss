@@ -1,0 +1,28 @@
+section#teams {
+    padding: 15vh 7.5vw;
+
+    background-image: url("../images/color_back.png");
+    background-size: cover;
+    background-position: center;
+
+    .green {
+        @include background-opacity(map-get($colors, "primary"), 0.85);
+    }
+
+    .blue {
+        @include background-opacity(map-get($colors, "secondary"), 0.85);
+    }
+
+    @include breakpoint-max(tablet-down) {
+        padding: 15vh 3rem;
+        grid-template-columns: 1fr;
+    }
+
+    @include breakpoint-max(phone-down) {
+        padding: 15vh 1rem;
+
+        div > .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}

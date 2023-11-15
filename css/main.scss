@@ -1,0 +1,10 @@
+@import "themes/default.scss";
+
+@import "base/reset.scss", "base/breakpoints.scss", "base/base.scss", "base/typography.scss", "base/color.scss";
+
+@import "utils/flex.scss", "utils/grid.scss", "utils/background.scss", "utils/spacing.scss";
+
+@import "layout/default.scss", "layout/custom.scss", "layout/footer.scss", "layout/footer.scss", "layout/hero.scss", "layout/jobs.scss",
+    "layout/menu.scss", "layout/preparation.scss", "layout/teams.scss";
+
+@import "components/button.scss", "components/inputs.scss", "components/links.scss", "components/navbar.scss";

@@ -1,0 +1,21 @@
+a:not(.btn) {
+    color: var(--link-color);
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 15%;
+        right: 15%;
+        height: 2px;
+        transform: scaleX(0);
+        background-color: var(--link-color);
+        transform-origin: left;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+    }
+}

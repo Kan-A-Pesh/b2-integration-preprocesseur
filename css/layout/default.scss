@@ -1,0 +1,13 @@
+section {
+    min-height: 50vh;
+
+    &:not(#hero) {
+        padding: 20vh 15vw;
+    }
+}
+
+section.noise-bg {
+    background-image: url("../images/noise.png");
+    background-size: 400px;
+    background-repeat: repeat;
+}

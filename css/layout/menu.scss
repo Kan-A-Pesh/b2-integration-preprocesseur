@@ -1,0 +1,57 @@
+section#menu {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    .description {
+        margin-bottom: 5rem;
+    }
+
+    .grid {
+        @include breakpoint-max(tablet-down) {
+            grid-template-columns: 1fr;
+
+            .products {
+                margin-bottom: 4rem;
+            }
+        }
+    }
+
+    .products {
+        > div {
+            padding: 0.5rem;
+
+            &.best-seller {
+                outline: 1px solid var(--primary);
+                outline-offset: -1px;
+                position: relative;
+
+                .ribbon {
+                    position: absolute;
+                    right: 0;
+                    bottom: 100%;
+
+                    background-color: var(--primary);
+                    color: var(--white);
+
+                    padding: 0.25rem 0.5rem;
+                    font-size: 0.75rem;
+                }
+            }
+
+            header {
+                color: var(--primary);
+                margin-bottom: 0.25rem;
+            }
+        }
+    }
+
+    .force {
+        h3 {
+            font-size: 3rem;
+        }
+    }
+}

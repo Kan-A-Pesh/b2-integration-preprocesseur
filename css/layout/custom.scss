@@ -1,0 +1,30 @@
+section#custom {
+    position: relative;
+    overflow: hidden;
+
+    .texts {
+        max-width: 40vw;
+    }
+
+    > img {
+        z-index: -1;
+        position: absolute;
+        bottom: 0;
+        left: 55vw;
+    }
+
+    @include breakpoint-max(tablet-down) {
+        flex-direction: row;
+        padding-bottom: 50vh;
+
+        .texts {
+            max-width: 100%;
+        }
+
+        > img {
+            bottom: auto;
+            left: auto;
+            width: 70%;
+        }
+    }
+}

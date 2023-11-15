@@ -1,0 +1,14 @@
+section#preparation {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+
+    background-image: url("../images/salad_back.png");
+    background-size: cover;
+    background-position: center;
+
+    .modal {
+        margin-left: auto;
+        @include background-opacity(map-get($colors, "primary"), 0.85);
+        max-width: max(500px);
+    }
+}

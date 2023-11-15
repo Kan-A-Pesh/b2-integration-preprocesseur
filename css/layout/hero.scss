@@ -1,0 +1,65 @@
+section#hero {
+    height: 100vh;
+    position: relative;
+
+    .background {
+        // isolation: isolate;
+        z-index: -1;
+
+        img,
+        div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            object-fit: cover;
+            object-position: center;
+        }
+
+        div {
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            opacity: 0.62;
+            // blend-mode: multiply;
+        }
+    }
+
+    .title {
+        position: relative;
+
+        h1 {
+            @include breakpoint-max(tablet-up) {
+                font-size: 6rem;
+            }
+
+            @include breakpoint-max(phone-down) {
+                font-size: 5rem;
+            }
+        }
+
+        .subtitle {
+            font-size: 2rem;
+
+            @include breakpoint-min(tablet-down) {
+                position: absolute;
+                left: 25%;
+                top: 100%;
+                width: 100%;
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .socials {
+        position: absolute;
+        bottom: 32px;
+        right: 32px;
+
+        & > *:hover {
+            opacity: 0.5;
+        }
+    }
+}

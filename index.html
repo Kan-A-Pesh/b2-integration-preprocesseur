@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MONGOO</title>
+
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <nav id="navbar" class="flex justify-between align-center gap-2">
+            <img src="./images/mongoo.png" alt="logo" height="64px" />
+            <ul class="flex gap-3">
+                <li><a href="#" class="text-light">Accueil</a></li>
+                <li><a href="#" class="text-light">Qui sommes nous?</a></li>
+                <li><a href="#" class="text-light">Menu</a></li>
+                <li><a href="#" class="text-light">Contact</a></li>
+                <li><a href="#" class="btn btn-small">Commander</a></li>
+            </ul>
+        </nav>
+
+        <section id="hero" class="flex justify-center align-center">
+            <div class="background">
+                <img src="./images/header_back.png" alt="hero" />
+                <div class="gradient"></div>
+            </div>
+
+            <div class="title flex flex-col align-center">
+                <h1 class="text-semibold">mongoo</h1>
+                <p class="subtitle reverse-italic color-white">c'est frais pour vous!</p>
+            </div>
+
+            <div class="socials flex gap-1">
+                <img src="./images/facebook.png" alt="facebook" />
+                <img src="./images/twitter.png" alt="twitter" />
+                <img src="./images/instagram.png" alt="instagram" />
+            </div>
+        </section>
+
+        <section id="custom" class="noise-bg">
+            <div class="texts flex flex-col gap-3 align-start">
+                <h2 class="color-primary">Une salade sur mesure</h2>
+                <p>
+                    MONGOO vous permet de composer votre salade selon vos envies et vos goûts.<br /><br />
+                    Une quarantaine d'ingrédients frais et préparés le matin même sur place vous sont proposés au quotidien.<br /><br />
+                    Depuis maintenant 10 ans, MONGOO fait le bonheur des gourmets et des gourmands, alors pourquoi pas vous ?<br />
+                </p>
+                <a href="#" class="btn btn-primary">En savoir +</a>
+            </div>
+            <img src="./images/salad.png" alt="custom made salad" />
+        </section>
+
+        <section id="preparation">
+            <div class="modal p-3 flex flex-col gap-2 align-center">
+                <h2 class="text-center">Préparé sur place et avec amour</h2>
+                <p class="text-center color-white">
+                    Chez MONGOO, <u>tous les ingrédients</u> et <u>tous les desserts</u> sont préparés sur place.<br /><br />
+                    Nous mettons un point d'honneur à ce que tous les matins, nos équipes de super-préparateurs découpent, tranchent,
+                    épluchent, assaisonnent, mélangent, émincent, saupoudrent et préparent tout ce qu'il y a sur le bar afin de vous
+                    proposer les meilleures combinaisons de salades possible.<br /><br />
+                    Alors faites votre choix !
+                </p>
+                <a href="#" class="btn">En savoir +</a>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="color-primary text-center">Vous avez dit menu?</h2>
+            <p class="text-center description">
+                Un menu MONGOO, c'est une salade accompagnée d'une boisson et d'un dessert. Mais attention, pas n'importe quelle boisson et
+                n'importe quel dessert...<br /><br />
+                Découvrez notre large sélection de boissons et desserts pour accompagner votre repas
+            </p>
+
+            <div class="grid grid-col-2 gap-2">
+                <div class="products flex flex-col gap-2">
+                    <div>
+                        <header class="flex justify-between">
+                            <h4 class="text-semibold">Salade j'aime</h4>
+                            <h4 class="text-semibold">7.70€</h4>
+                        </header>
+                        <p>
+                            1 base · 4 ingrédients verts · Sauce<br />
+                            Petit plus et pain offert
+                        </p>
+                    </div>
+
+                    <div>
+                        <header class="flex justify-between">
+                            <h4 class="text-semibold">Salade j'adore</h4>
+                            <h4 class="text-semibold">8.80€</h4>
+                        </header>
+                        <p>
+                            1 base · 4 ingrédients verts · Sauce<br />
+                            Petit plus et pain offert
+                        </p>
+                    </div>
+
+                    <div class="best-seller">
+                        <span class="ribbon">La plus vendue !</span>
+
+                        <header class="flex justify-between">
+                            <h4 class="text-semibold">Salade 2-2</h4>
+                            <h4 class="text-semibold">9.90€</h4>
+                        </header>
+                        <p>
+                            1 base · 2 ingrédients verts & 2 bleus · Sauce<br />
+                            Petit plus et pain offert
+                        </p>
+                    </div>
+
+                    <div>
+                        <header class="flex justify-between">
+                            <h4 class="text-semibold">Salade passion</h4>
+                            <h4 class="text-semibold">11.00€</h4>
+                        </header>
+                        <p>
+                            1 base · 1 ingrédient verts & 3 bleus · Sauce<br />
+                            Petit plus et pain offert
+                        </p>
+                    </div>
+
+                    <div>
+                        <header class="flex justify-between">
+                            <h4 class="text-semibold">Salade folie</h4>
+                            <h4 class="text-semibold">12.10€</h4>
+                        </header>
+                        <p>
+                            1 base · 4 ingrédients bleus · Sauce<br />
+                            Petit plus et pain offert
+                        </p>
+                    </div>
+                </div>
+                <div class="force flex flex-col gap-5 align-center justify-center">
+                    <div>
+                        <h3 class="reverse-italic color-primary text-center">Force verte ?</h3>
+                        <h3 class="reverse-italic color-secondary text-center">Force bleue ?</h3>
+                    </div>
+                    <p class="text-center">Ne perdez pas une seconde, faites votre choix et venez chercher votre salade dans 20min !</p>
+                    <a href="#" class="btn btn-primary">Passer commande</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="teams" class="grid grid-col-2 gap-2">
+            <div class="green flex flex-col align-center gap-3 p-3">
+                <h2 class="text-center">Chez les verts</h2>
+                <div class="grid grid-col-2 gap-1">
+                    <p class="color-white text-center">
+                        Croûtons<br />
+                        Œuf (1)<br />
+                        Betteraves<br />
+                        Carottes<br />
+                        Choux rouges<br />
+                        Concombre<br />
+                        Lentilles<br />
+                        Maïs<br />
+                        Oignons rouges
+                    </p>
+                    <p class="color-white text-center">
+                        Radis<br />
+                        Pommes<br />
+                        Oignons frits<br />
+                        Emmental<br />
+                        Mozzarella<br />
+                        Mimolette<br />
+                        Surimi<br />
+                        Saucisses
+                    </p>
+                </div>
+            </div>
+            <div class="blue flex flex-col align-center gap-3 p-3">
+                <h2 class="text-center">Chez les bleus</h2>
+                <div class="grid grid-col-2 gap-1">
+                    <p class="color-white text-center">
+                        Aubergines<br />
+                        Avocat<br />
+                        Cantal<br />
+                        Cœur d'artichaut<br />
+                        Grana Panado<br />
+                        Jambon cru<br />
+                        Crevettes
+                    </p>
+                    <p class="color-white text-center">
+                        Feta<br />
+                        Melon<br />
+                        Œuf poché<br />
+                        Poivrons<br />
+                        Thon<br />
+                        Tomates cerises<br />
+                        Tomates séchées
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="jobs" class="flex noise-bg gap-2 align-center justify-center">
+            <div class="image">
+                <img src="./images/jobs_back.png" role="presentation" alt="jobs" />
+                <div class="vertical-line"></div>
+                <div class="horizontal-line"></div>
+            </div>
+            <div class="form flex-grow-1 flex flex-col gap-3">
+                <h2 class="color-primary">Envie de partager ?</h2>
+                <p>
+                    Toute l'année, on recrute des employés motivés pour tous nos restaurants !<br />
+                    N'hésitez pas à postuler !
+                </p>
+
+                <form action="#" class="flex flex-col align-center gap-2">
+                    <div class="flex gap-1">
+                        <div class="input flex-grow-1">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" />
+                        </div>
+
+                        <div class="input flex-grow-1">
+                            <label for="firstname">Prénom</label>
+                            <input type="text" id="firstname" />
+                        </div>
+                    </div>
+
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" />
+                    </div>
+
+                    <div class="input">
+                        <label for="message">Votre motivation en quelques mots</label>
+                        <textarea id="message"></textarea>
+                    </div>
+
+                    <a href="#" class="btn btn-primary">Postuler</a>
+                </form>
+            </div>
+        </section>
+
+        <footer class="grid gap-4">
+            <div class="flex justify-center align-center">
+                <img src="./images/mongoo.png" alt="logo" />
+            </div>
+            <div>
+                <h4 class="color-white">Commander</h4>
+                <ul class="flex flex-col gap-1">
+                    <li><a href="#">Passer commande</a></li>
+                    <li><a href="#">Nos menus</a></li>
+                    <li><a href="#">Restaurants</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="color-white">Informations</h4>
+                <ul class="flex flex-col gap-1">
+                    <li><a href="#">F.A.Q</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Recrutements</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="color-white">Nous retrouver</h4>
+                <ul class="flex flex-col gap-1">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">instagram</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

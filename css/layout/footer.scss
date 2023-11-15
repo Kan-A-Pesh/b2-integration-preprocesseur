@@ -1,0 +1,24 @@
+footer {
+    background: var(--primary);
+    padding: 4rem;
+    text-align: center;
+
+    img {
+        max-width: 60vw;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    grid-template-columns: repeat(4, 1fr);
+
+    @include breakpoint-max(desktop-down) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint-max(tablet-down) {
+        grid-template-columns: 1fr;
+    }
+}

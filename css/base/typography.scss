@@ -1,0 +1,82 @@
+// Google Fonts: Poppins
+// Font Weight: 300, 400, 600, 700
+// Font Style: normal, italic
+@import url("https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    font-size: 11px;
+
+    @include breakpoint-min(tablet-up) {
+        font-size: 12px;
+    }
+
+    @include breakpoint-min(tablet-down) {
+        font-size: 14px;
+    }
+
+    @include breakpoint-min(desktop-up) {
+        font-size: 16px;
+    }
+
+    @include breakpoint-min(desktop-down) {
+        font-size: 17px;
+    }
+
+    @include breakpoint-min(widescreen-up) {
+        font-size: 18px;
+    }
+}
+
+.text-light {
+    font-weight: 300;
+}
+
+.text-semibold {
+    font-weight: 600;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.reverse-italic {
+    transform: skew(0, -10deg);
+}
+
+h1 {
+    font-size: 8rem;
+    line-height: 1.2;
+    color: var(--white);
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    color: var(--white);
+}
+
+p {
+    color: var(--black);
+
+    @include breakpoint-max(tablet-down) {
+        font-size: 1.25rem;
+    }
+
+    @include breakpoint-max(tablet-up) {
+        font-size: 1.5rem;
+    }
+}

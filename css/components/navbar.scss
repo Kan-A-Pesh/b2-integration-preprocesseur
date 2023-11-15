@@ -1,0 +1,13 @@
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    padding: 24px 48px;
+
+    @include breakpoint-max(desktop-up) {
+        flex-direction: column;
+    }
+}
